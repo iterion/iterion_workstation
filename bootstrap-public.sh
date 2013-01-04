@@ -17,6 +17,8 @@ recipes:
 - pivotal_workstation::locate_on
 - pivotal_workstation::gem_setup
 - pivotal_workstation::oh_my_zsh
+- pivotal_workstation::git
+- pivotal_workstation::heroku_toolbelt
 - pivotal_workstation::coreutils
 - pivotal_workstation::findutils
 - pivotal_workstation::wget
@@ -30,12 +32,15 @@ recipes:
 - pivotal_workstation::github_for_mac
 - pivotal_workstation::istatmenus
 - pivotal_workstation::viscosity
+- pivotal_workstation::tmux
+- pivotal_workstation::vim
 - pivotal_workstation::root_shell_bash
 - pivotal_workstation::optipng
 - pivotal_workstation::jpegoptim
 - pivotal_workstation::gnu-tar
 - pivotal_workstation::mysql
 - pivotal_workstation::postgres
+- pivotal_workstation::mongodb
 - pivotal_workstation::psycopg2
 - pivotal_workstation::mysql-python
 - pivotal_workstation::imagemagick
