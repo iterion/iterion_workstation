@@ -50,7 +50,6 @@ recipes:
 - pivotal_workstation::sequelpro
 - pivotal_workstation::standby-delay
 - pivotal_workstation::expand_save_panel_by_default
-- pivotal_workstation::solarized_terminal_settings
 - pivotal_workstation::increase_window_resize_speed_for_cocoa_applications
 - pivotal_workstation::disable_gatekeeper
 - pivotal_workstation::expand_print_panel_by_default
@@ -90,6 +89,7 @@ recipes:
 - pivotal_workstation::make_safari_search_banners_default_to_contains_instead_of_starts_with
 - pivotal_workstation::add_a_context_menu_item_for_showing_the_web_inspector_in_web_views
 - pivotal_workstation::prevent_time_machine_from_prompting_to_use_new_hard_drives_as_backup_volume
+- iterion_workstation::solarized_terminal_settings
 EOF
 
 if [[ -d pivotal_workstation ]]; then
