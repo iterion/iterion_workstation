@@ -15,28 +15,20 @@ recipes:
 - pivotal_workstation::create_var_chef_cache
 - pivotal_workstation::xquartz
 - pivotal_workstation::locate_on
-- pivotal_workstation::1password
 - pivotal_workstation::gem_setup
-- pivotal_workstation::bash4
-- pivotal_workstation::bash_it
-- pivotal_workstation::bash_completion
+- pivotal_workstation::oh_my_zsh
 - pivotal_workstation::coreutils
 - pivotal_workstation::findutils
 - pivotal_workstation::wget
 - pivotal_workstation::pwgen
-- pivotal_workstation::siege
 - pivotal_workstation::xmlstarlet
 - pivotal_workstation::watch
 - pivotal_workstation::rvm
-- pivotal_workstation::alfred
 - pivotal_workstation::chrome
 - pivotal_workstation::dropbox
 - pivotal_workstation::firefox
 - pivotal_workstation::github_for_mac
-- pivotal_workstation::bartender
 - pivotal_workstation::istatmenus
-- pivotal_workstation::phpstorm
-- pivotal_workstation::things
 - pivotal_workstation::viscosity
 - pivotal_workstation::root_shell_bash
 - pivotal_workstation::optipng
@@ -48,21 +40,15 @@ recipes:
 - pivotal_workstation::mysql-python
 - pivotal_workstation::imagemagick
 - pivotal_workstation::unhide_home
-- pivotal_workstation::php54
 - pivotal_workstation::mod-jk
 - pivotal_workstation::composer
 - pivotal_workstation::sequelpro
-- pivotal_workstation::tower
-- pivotal_workstation::kaleidoscope2
-- pivotal_workstation::omnigraffle
 - pivotal_workstation::standby-delay
 - pivotal_workstation::expand_save_panel_by_default
 - pivotal_workstation::increase_window_resize_speed_for_cocoa_applications
 - pivotal_workstation::disable_gatekeeper
 - pivotal_workstation::expand_print_panel_by_default
-- pivotal_workstation::save_to_disk_not_to_iCloud_by_default
 - pivotal_workstation::disable_resume_system-wide
-- pivotal_workstation::check_for_software_updates_daily
 - pivotal_workstation::restart_automatically_if_the_computer_freezes
 - pivotal_workstation::check_for_software_updates_daily
 - pivotal_workstation::increase_sound_quality_for_bluetooth_headphones
@@ -84,43 +70,36 @@ recipes:
 - pivotal_workstation::disable_disk_image_verification
 - pivotal_workstation::automatically_open_a_new_finder_window_when_a_volume_is_mounted
 - pivotal_workstation::use_column_view_in_all_finder_windows_by_default
-- pivotal_workstation::disable_the_warning_before_emptying_the_trash
 - pivotal_workstation::empty_trash_securely_by_default
 - pivotal_workstation::enable_highlight_hover_effect_for_the_grid_view_of_a_stack
 - pivotal_workstation::set_the_icon_size_of_dock_items_to_36_pixels
 - pivotal_workstation::enable_spring_loading_for_all_dock_items
 - pivotal_workstation::show_indicator_lights_for_open_applications_in_the_dock
-- pivotal_workstation::do_not_animate_opening_applications_from_the_dock
-- pivotal_workstation::speed_up_mission_control_animations
 - pivotal_workstation::do_not_group_windows_by_application_in_mission_control
 - pivotal_workstation::do_not_show_dashboard_as_a_space
 - pivotal_workstation::remove_the_auto-hiding_dock_delay
 - pivotal_workstation::remove_the_animation_when_hiding_showing_the_dock
 - pivotal_workstation::make_dock_icons_of_hidden_applications_translucent
-- pivotal_workstation::position_the_dock_on_the_left_side
 - pivotal_workstation::enable_safari_debug_menu
 - pivotal_workstation::make_safari_search_banners_default_to_contains_instead_of_starts_with
 - pivotal_workstation::add_a_context_menu_item_for_showing_the_web_inspector_in_web_views
-- pivotal_workstation::disable_send_and_reply_animations_in_mail
 - pivotal_workstation::prevent_time_machine_from_prompting_to_use_new_hard_drives_as_backup_volume
-- roderik_workstation::sublime_packages
-- roderik_workstation::inputrc
 EOF
 
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
 else
-  git clone https://github.com/roderik/pivotal_workstation.git
+  git clone https://github.com/pivotal/pivotal_workstation.git
 fi
 if [[ -d dmg ]]; then
   cd dmg && git pull && cd ..
 else
   git clone https://github.com/opscode-cookbooks/dmg.git
 fi
-if [[ -d roderik_workstation ]]; then
-  cd roderik_workstation && git pull && cd ..
+if [[ -d iterion_workstation ]]; then
+  cd iterion_workstation && git pull && cd ..
 else
-  git clone https://github.com/roderik/roderik_workstation.git
+  git clone https://github.com/iterion/iterion_workstation.git
 fi
 
 soloist
