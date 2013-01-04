@@ -50,6 +50,7 @@ recipes:
 - pivotal_workstation::sequelpro
 - pivotal_workstation::standby-delay
 - pivotal_workstation::expand_save_panel_by_default
+- pivotal_workstation::solarized_terminal_settings
 - pivotal_workstation::increase_window_resize_speed_for_cocoa_applications
 - pivotal_workstation::disable_gatekeeper
 - pivotal_workstation::expand_print_panel_by_default
@@ -94,7 +95,7 @@ EOF
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
 else
-  git clone https://github.com/pivotal/pivotal_workstation.git
+  git clone https://github.com/roderik/pivotal_workstation.git
 fi
 if [[ -d dmg ]]; then
   cd dmg && git pull && cd ..
